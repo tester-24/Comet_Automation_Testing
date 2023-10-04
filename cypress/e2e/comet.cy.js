@@ -2,7 +2,7 @@
 
 import { LoginPage } from "./Pages/comet_login.cy.js"
 const loginPage = new LoginPage
-import './support/commands';
+
 
 it('Comet_Jainam', () => {
     cy.visit('https://comet.jainam.in/#/startup')

@@ -26,15 +26,21 @@ const mailOptions = {
     },
 
   //   {
-  //     filename: 'comet.cy.js.mp4',//failed screenshots
-  //     path: './comet.cy.js.mp4',
+  //     filename: 'Comet_Jainam(failed).png',//failed screenshots
+  //     path: './Comet_Jainam(failed).png',
   // },
 
-  // {
-  //     filename: 'comet.cy.js.mp4' ,
-  //     path: './comet.cy.js.mp4',
+  {
+      filename: 'comet.cy.js.mp4' ,
+      path: './comet.cy.js.mp4',
 
-  // },
+  },
+  
+  {
+    filename: 'comet_login.cy.js.mp4' ,
+    path: './comet_login.cy.js.mp4',
+
+},
   {
 
       filename: 'Report_Dividend_Report.cy.js.mp4 ' ,
@@ -102,11 +108,11 @@ const mailOptions = {
   filename: 'LedgerReport.pdf' ,
   path: './LedgerReport.pdf',
 },
-// {
+{
 
-//   filename: 'MCX_J33_2021.pdf' ,
-//   path: './MCX_J33_2021.pdf',
-// },
+  filename: 'MCX_J33_2021.pdf' ,
+  path: './MCX_J33_2021.pdf',
+},
 {
 
   filename: 'NSE_FNO_J33_2021.pdf' ,

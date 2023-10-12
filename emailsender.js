@@ -108,11 +108,11 @@ const mailOptions = {
   filename: 'LedgerReport.pdf' ,
   path: './LedgerReport.pdf',
 },
-{
+// {
 
-  filename: 'MCX_J33_2021.pdf' ,
-  path: './MCX_J33_2021.pdf',
-},
+//   filename: 'MCX_J33_2021.pdf' ,
+//   path: './MCX_J33_2021.pdf',
+// },
 {
 
   filename: 'NSE_FNO_J33_2021.pdf' ,

@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
 // Define the email options
 const mailOptions = {
   from: 'tester3.elitetechno@gmail.com',
-  to: 'brijal.pachchigar@jainam.biz',
-  to: 'tester3.elitetechno@gmail.com',
+  to: 'tester.elitetechno@gmail.com',
+  to: 'tester4.elitetechno@gmail.com',
   subject: 'This is Automation Testing Report',
   text: 'Automationn Testing report for Comet web app',
   attachments: [

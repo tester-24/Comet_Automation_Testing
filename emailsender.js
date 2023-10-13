@@ -103,11 +103,11 @@ const mailOptions = {
   filename: 'Holding.pdf' ,
   path: './Holding.pdf',
 },
-{
+// {
 
-  filename: 'LedgerReport.pdf' ,
-  path: './LedgerReport.pdf',
-},
+//   filename: 'LedgerReport.pdf' ,
+//   path: './LedgerReport.pdf',
+// },
 // {
 
 //   filename: 'MCX_J33_2021.pdf' ,

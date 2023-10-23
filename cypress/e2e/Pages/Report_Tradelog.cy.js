@@ -29,7 +29,7 @@ it('Comet_Jainam', () => {
 
     //Click on form
     cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
-    cy.wait(35000)
+    cy.wait(3000)
 
 
     // click on Reports
@@ -44,24 +44,24 @@ it('Comet_Jainam', () => {
     // 1) year 2023-2024
     //Click on CheckBox 
     cy.get('.trade-log-expense > label').click()
-    cy.wait(1000)
+    cy.wait(200)
 
     //Click on Download Button
     cy.get('.btn').click()
-    cy.wait(4000)
+    cy.wait(200)
 
     // 2) year 2022-2023
     cy.get('.k-icon')
     //.type("{downArrow}{Enter}")
-    cy.wait(1000)
+    cy.wait(200)
 
     // //Click on Download Button
-    cy.get('.btn').click()
-    cy.wait(3000)
+    cy.get('form.ng-untouched > :nth-child(2) > :nth-child(3)').click()
+    cy.wait(4000)
 
     // 3) year 2021-2022
     cy.get('.k-icon').type("{downArrow}{downArrow}{Enter}")
-    cy.wait(1000)
+    cy.wait(200)
 
     //Click on Download Button
     cy.get('.btn').click()

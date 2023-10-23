@@ -56,7 +56,7 @@ it('Comet_Jainam', () => {
 
     //Click on View Button 
     cy.get(':nth-child(2) > :nth-child(3) > .btn').click()
-    cy.wait(8000)
+    cy.wait(500)
 
     //View GRID 
     cy.get('.k-grid-content').click()

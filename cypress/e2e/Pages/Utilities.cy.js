@@ -362,10 +362,5 @@ it('Comet_Jainam', () => {
 
 
 
-    //     // //Click on Gifts
-    //     // //cy.get('#UtilitiesDropdown').click()
-    //     // cy.get('.dropdown-menu > .ng-star-inserted').click()
-    //     // cy.wait(3000)
-
 
 })

@@ -83,8 +83,8 @@ it('Comet_Jainam', () => {
     cy.get('.bid-section').click()
 
 
-    cy.get('.corporate-tabel > .table-responsive > .k-grid > .k-pager-wrap > kendo-pager-numeric-buttons.ng-star-inserted > .k-pager-numbers > :nth-child(2) > .k-link').click()
-    cy.wait(3000)
+    // cy.get('.corporate-tabel > .table-responsive > .k-grid > .k-pager-wrap > kendo-pager-numeric-buttons.ng-star-inserted > .k-pager-numbers > :nth-child(2) > .k-link').click()
+    // cy.wait(3000)
 
 
     // //Script Name

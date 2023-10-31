@@ -43,7 +43,7 @@ it('Comet_Jainam', () => {
 
     // 1) year 2023-2024
     //Click on CheckBox 
-    cy.get('.trade-log-expense > label').click()
+    cy.get('.k-icon').click()
     cy.wait(200)
 
     //Click on Download Button
@@ -56,7 +56,7 @@ it('Comet_Jainam', () => {
     cy.wait(200)
 
     // //Click on Download Button
-    cy.get('form.ng-untouched > :nth-child(2) > :nth-child(3)').click()
+    cy.get('.btn').click()
     cy.wait(4000)
 
     // 3) year 2021-2022

@@ -27,10 +27,9 @@ it('Comet_Jainam', () => {
     cy.wait(4000)
 
 
-    //Click on [X] Button
-    // cy.get('.close > span').click({ force: true })
-    // cy.get('.close > span').click()
-    // cy.wait(4000)
+    //Click on form
+    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
+    cy.wait(35000)
 
     // Click on LAS
     cy.get('.menu_hover.ng-star-inserted > .nav-link').click()

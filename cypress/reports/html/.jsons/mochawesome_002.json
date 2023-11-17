@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-17T04:02:59.679Z",
+    "end": "2023-11-17T04:04:32.783Z",
+    "duration": 93104,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e2d3079e-6ab0-4c79-9583-09556ac7644b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Pages\\Funds.cy.js",
+      "file": "cypress\\e2e\\Pages\\Funds.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Comet_Jainam",
+          "fullTitle": "Comet_Jainam",
+          "timedOut": null,
+          "duration": 89820,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\Pages\\\\Funds.cy.js\"\n}",
+          "code": "cy.visit('https://comet.jainam.in/#/startup');\ncy.wait(3000);\ncy.get('.login-space-btn').click();\nloginPage.enterUsername();\nloginPage.enterPassword();\nloginPage.clickLogin();\ncy.wait(3000);\n//Pin Page\ncy.get('.form_wrap').click();\ncy.wait(2000);\n//Enter Pin\ncy.wait(1000);\ncy.get('[formcontrolname=\"otp1\"]').type('0');\ncy.get('[formcontrolname=\"otp2\"]').type('0');\ncy.get('[formcontrolname=\"otp3\"]').type('0');\ncy.get('[formcontrolname=\"otp4\"]').type('0');\ncy.wait(35000);\n//Click on form\ncy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click();\ncy.wait(35000);\n//Click on Funds\ncy.get(':nth-child(4) > .nav-link').click();",
+          "err": {},
+          "uuid": "0bd6c3ae-d80c-4f29-a893-23ad3b48c662",
+          "parentUUID": "e2d3079e-6ab0-4c79-9583-09556ac7644b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "0bd6c3ae-d80c-4f29-a893-23ad3b48c662"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 89820,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportPageTitle": "cypress - report",
+        "embeddedScreenshots": true,
+        "html": false,
+        "inlineAssets": true,
+        "saveAllAttempts": true,
+        "overwrite": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

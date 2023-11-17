@@ -1,7 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: 'automation-report',
+  projectId: 'comet_project',
   reporter: 'cypress-mochawesome-reporter',
   video: true,
   reporterOptions: {

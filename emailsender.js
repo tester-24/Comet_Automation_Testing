@@ -1,16 +1,16 @@
-// const cron = require('node-cron');
-// const nodemailer = require('nodemailer');
+const cron = require('node-cron');
+const nodemailer = require('nodemailer');
 
-// // Create a transporter using your email service provider's SMTP settings
-// const transporter = nodemailer.createTransport({
-//   host: 'smtp.gmail.com',
-//   port: 465,
-//   secure: false, // Set to true if using a secure connection (e.g., SSL/TLS)
-//   auth: {
-//     user: 'tester3.elitetechno@gmail.com',
-//     pass: 'turlhuuhgdlyglnx',
-//   },
-// });
+// Create a transporter using your email service provider's SMTP settings
+const transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: false, // Set to true if using a secure connection (e.g., SSL/TLS)
+  auth: {
+    user: 'tester3.elitetechno@gmail.com',
+    pass: 'turlhuuhgdlyglnx',
+  },
+});
 
 // // Define the email options
 // const mailOptions = {

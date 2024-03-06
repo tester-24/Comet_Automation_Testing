@@ -28,7 +28,7 @@ it('Comet_Jainam', () => {
 
 
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
+    cy.get('.left_arrow_wrap_top > img').click()
     cy.wait(35000)
 
     // Click on LAS

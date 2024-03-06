@@ -13,26 +13,27 @@ it('Comet_Jainam', () => {
     loginPage.clickLogin()
     cy.wait(3000)
 
-
     //Pin Page
     cy.get('.form_wrap').click()
     cy.wait(2000)
 
-    //Enter Pin
-    cy.wait(1000);
-    cy.get('[formcontrolname="otp1"]').type('0')
-    cy.get('[formcontrolname="otp2"]').type('0')
-    cy.get('[formcontrolname="otp3"]').type('0')
-    cy.get('[formcontrolname="otp4"]').type('0')
-    cy.wait(35000)
+   //Enter Pin
+   cy.wait(1000);
+   cy.get('[formcontrolname="otp1"]').type('0')
+   cy.get('[formcontrolname="otp2"]').type('0')
+   cy.get('[formcontrolname="otp3"]').type('0')
+   cy.get('[formcontrolname="otp4"]').type('0')
+   cy.wait(4000)
 
+   cy.get('.continue_button_wrap > p').click()
+   cy.wait(4000)
 
     //Click on form
     cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
-    cy.wait(35000)
+   cy.wait(3000)
 
 
-
+    
 
     // click on Reports
     cy.get('#ReportDropdown').click({ force: true })

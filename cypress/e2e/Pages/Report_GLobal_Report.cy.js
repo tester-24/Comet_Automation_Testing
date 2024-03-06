@@ -17,18 +17,27 @@ it('Comet_Jainam', () => {
     cy.get('.form_wrap').click()
     cy.wait(2000)
 
+    //Pin Page
+    cy.get('.form_wrap').click()
+    cy.wait(2000)
+ 
     //Enter Pin
-    cy.wait(1000);
-    cy.get('.six_digit_pin_wrap > .ng-touched').type('0')
-    cy.get('[formcontrolname="otp2"]').type('0')
-    cy.get('[formcontrolname="otp3"]').type('0')
-    cy.get('[formcontrolname="otp4"]').type('0')
-    cy.wait(35000)
+   cy.wait(1000);
+   cy.get('[formcontrolname="otp1"]').type('0');
+   cy.get('[formcontrolname="otp2"]').type('0');
+   cy.get('[formcontrolname="otp3"]').type('0');
+   cy.get('[formcontrolname="otp4"]').type('0');
+   cy.wait(3000);
+ 
+   cy.get('.continue_button_wrap').click()
+   cy.wait(4500)
 
-
+   
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
-    cy.wait(35000)
+    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click();
+    cy.wait(3000);
+
+
 
     // click on Reports
     cy.get('#ReportDropdown').click({ force: true })
@@ -64,7 +73,7 @@ it('Comet_Jainam', () => {
 
     //Download 
     cy.get('.col-lg-2 > .btn').click()
-    cy.wait(4000)
+    cy.wait(4500)
 
 
 
@@ -72,7 +81,7 @@ it('Comet_Jainam', () => {
     //Selecting DERIVATIVE 
     cy.get('.container > form.ng-valid > :nth-child(2) > :nth-child(1)')
         .type("{downArrow}{Enter}")
-    cy.wait(3000)
+    cy.wait(3500)
 
     //Download By
     cy.get(':nth-child(2) > .form-group').click()

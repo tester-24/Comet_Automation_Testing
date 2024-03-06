@@ -18,18 +18,21 @@ it('Comet_Jainam', () => {
     cy.get('.form_wrap').click()
     cy.wait(2000)
 
-    //Enter Pin
-    cy.wait(1000);
-    cy.get('[formcontrolname="otp1"]').type('0')
-    cy.get('[formcontrolname="otp2"]').type('0')
-    cy.get('[formcontrolname="otp3"]').type('0')
-    cy.get('[formcontrolname="otp4"]').type('0')
-    cy.wait(35000)
+   //Enter Pin
+   cy.wait(1000);
+   cy.get('[formcontrolname="otp1"]').type('0')
+   cy.get('[formcontrolname="otp2"]').type('0')
+   cy.get('[formcontrolname="otp3"]').type('0')
+   cy.get('[formcontrolname="otp4"]').type('0')
+   cy.wait(3000)
 
+   cy.get('.continue_button_wrap').click()
+   cy.wait(3000)
 
     //Click on form
     cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
-    cy.wait(3000)
+   cy.wait(3000)
+
 
 
     // click on Reports
@@ -56,7 +59,7 @@ it('Comet_Jainam', () => {
     cy.wait(200)
 
     // //Click on Download Button
-    cy.get('.btn').click()
+    cy.get('.btn')
     cy.wait(4000)
 
     // 3) year 2021-2022

@@ -23,8 +23,11 @@ it('Comet_Jainam', () => {
     cy.get('[formcontrolname="otp2"]').type('0')
     cy.get('[formcontrolname="otp3"]').type('0')
     cy.get('[formcontrolname="otp4"]').type('0')
-    cy.wait(35000)
+    cy.wait(3000)
 
+    cy.get('.continue_button_wrap > p').click()
+    cy.wait(4000)
+    
      //Click on form
      cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
     cy.wait(35000)

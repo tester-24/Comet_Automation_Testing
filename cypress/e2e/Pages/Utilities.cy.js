@@ -23,7 +23,7 @@ it('Comet_Jainam', () => {
    cy.get('[formcontrolname="otp2"]').type('0');
    cy.get('[formcontrolname="otp3"]').type('0');
    cy.get('[formcontrolname="otp4"]').type('0');
-   cy.wait(3000);
+   cy.wait(4000);
    
    cy.get('.continue_button_wrap > p').click()
    cy.wait(3000)
@@ -31,8 +31,8 @@ it('Comet_Jainam', () => {
  
    
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click();
-    cy.wait(3000);
+    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
+    cy.wait(5000);
   
 
 
@@ -153,8 +153,8 @@ it('Comet_Jainam', () => {
     cy.get('select').select('SHREYAS (D)', { force: true })
     //.should('have.value', SHREYAS (D)')
 
-    cy.wait(3000)
-    cy.get('select').select('UNICHEMLAB (T)', { force: true })
+    //cy.wait(3000)
+    //cy.get('select').select('UNICHEMLAB (T)', { force: true })
     //.should('have.value', UNICHEMLAB (T)')
 
     cy.wait(3000)

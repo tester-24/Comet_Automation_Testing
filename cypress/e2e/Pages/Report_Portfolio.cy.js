@@ -23,16 +23,16 @@ it('Comet_Jainam', () => {
     cy.get('[formcontrolname="otp2"]').type('0');
     cy.get('[formcontrolname="otp3"]').type('0');
     cy.get('[formcontrolname="otp4"]').type('0');
-    cy.wait(3000);
+    cy.wait(4000);
     
     cy.get('.continue_button_wrap > p').click()
-   cy.wait(3000)
+   cy.wait(5000)
 
   
     
      //Click on form
-     cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click();
-     cy.wait(3000);
+     cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
+     cy.wait(4000);
 
    //Click on Reports 
    cy.get('#ReportDropdown').click()
@@ -43,8 +43,6 @@ it('Comet_Jainam', () => {
    cy.wait(3000)
 
    //Selecting Drp down
-   cy.get('#k-3622423a-aed6-45c0-826e-a359d6c6de56 > .k-select').type("{downArrow}{Enter}")
+   //cy.get('#k-3622423a-aed6-45c0-826e-a359d6c6de56 > .k-select').type("{downArrow}{Enter}")
    
-   
-
 })

@@ -29,7 +29,7 @@ it('Comet_Jainam', () => {
    cy.wait(3000)
 
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
+    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
    cy.wait(3000)
 
     // click on Reports

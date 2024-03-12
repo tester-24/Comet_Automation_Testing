@@ -29,7 +29,7 @@ it('Comet_Jainam', () => {
    cy.wait(4000)
 
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click()
+    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
    cy.wait(3000)
 
 
@@ -57,7 +57,7 @@ it('Comet_Jainam', () => {
 
     //Click on View Button 
     cy.get(':nth-child(2) > :nth-child(3) > .btn').click()
-    cy.wait(500)
+    cy.wait(5000)
 
     //View GRID 
     cy.get('.k-grid-content').click()

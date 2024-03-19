@@ -17,16 +17,17 @@ it('Comet_Jainam', () => {
     //Pin Page
     cy.get('.form_wrap').click()
     cy.wait(2000)
+ 
+      //Enter Pin
+      cy.wait(1000);
+      cy.get('[formcontrolname="otp1"]').type('0');
+      cy.get('[formcontrolname="otp2"]').type('0');
+      cy.get('[formcontrolname="otp3"]').type('0');
+      cy.get('[formcontrolname="otp4"]').type('0');
+      cy.wait(3000);
+  
 
-    //Enter Pin
-    cy.wait(1000);
-    cy.get('[formcontrolname="otp1"]').type('0')
-    cy.get('[formcontrolname="otp2"]').type('0')
-    cy.get('[formcontrolname="otp3"]').type('0')
-    cy.get('[formcontrolname="otp4"]').type('0')
-    cy.wait(4000)
-
-    cy.get('.continue_button_wrap').click()
+    //cy.get('.continue_button_wrap').click()
 
      //Click on form
      cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })

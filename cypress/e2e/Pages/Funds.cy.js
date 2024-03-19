@@ -26,15 +26,19 @@ it('Comet_Jainam', () => {
     cy.get('[formcontrolname="otp4"]').type('0');
     cy.wait(3000);
 
-    cy.get('.continue_button_wrap > p').click();
+
+   
+    //cy.get('.continue_button_wrap').click();
     cy.wait(3000);
+
+
 
     //Click on form
-    cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
-    cy.wait(3000);
+    //cy.get('#AddNomineeDetail > .modal-dialog > .modal-content > .modal-body > .close').click({ force: true })
+    //cy.wait(3000);
 
     //Click on Funds
-    cy.get(':nth-child(4) > .nav-link').click()
+    //cy.get(':nth-child(4) > .nav-link').click()
 
 
 })

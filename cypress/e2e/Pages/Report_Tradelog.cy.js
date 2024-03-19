@@ -18,15 +18,15 @@ it('Comet_Jainam', () => {
     cy.get('.form_wrap').click()
     cy.wait(2000)
 
-   //Enter Pin
-   cy.wait(1000);
-   cy.get('[formcontrolname="otp1"]').type('0')
-   cy.get('[formcontrolname="otp2"]').type('0')
-   cy.get('[formcontrolname="otp3"]').type('0')
-   cy.get('[formcontrolname="otp4"]').type('0')
-   cy.wait(4000)
+  //Enter Pin
+  cy.wait(1000);
+  cy.get('[formcontrolname="otp1"]').type('0');
+  cy.get('[formcontrolname="otp2"]').type('0');
+  cy.get('[formcontrolname="otp3"]').type('0');
+  cy.get('[formcontrolname="otp4"]').type('0');
+  cy.wait(3000);
 
-   cy.get('.continue_button_wrap').click()
+   //cy.get('.continue_button_wrap').click()
    cy.wait(5000)
 
     //Click on form

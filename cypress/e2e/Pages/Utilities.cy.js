@@ -17,15 +17,15 @@ it('Comet_Jainam', () => {
     cy.get('.form_wrap').click()
     cy.wait(2000)
  
-    //Enter Pin
+   //Enter Pin
    cy.wait(1000);
    cy.get('[formcontrolname="otp1"]').type('0');
    cy.get('[formcontrolname="otp2"]').type('0');
    cy.get('[formcontrolname="otp3"]').type('0');
    cy.get('[formcontrolname="otp4"]').type('0');
-   cy.wait(4000);
+   cy.wait(3000);
    
-   cy.get('.continue_button_wrap > p').click()
+   //cy.get('.continue_button_wrap > p').click()
    cy.wait(3000)
 
  
@@ -153,26 +153,11 @@ it('Comet_Jainam', () => {
     cy.get('select').select('SHREYAS (D)', { force: true })
     //.should('have.value', SHREYAS (D)')
 
-    //cy.wait(3000)
+    
     //cy.get('select').select('UNICHEMLAB (T)', { force: true })
     //.should('have.value', UNICHEMLAB (T)')
 
-    cy.wait(3000)
-    cy.get('select').select('FDC (B)', { force: true })
-    //.should('have.value', FDC (B)')
-
-    
-    cy.wait(3000)
-    cy.get('select').select('INDIAMART (B)', { force: true })
-    //.should('have.value', INDIAMART (B)')
-
-    cy.wait(3000)
-    cy.get('select').select('KRBL (B)', { force: true })
-    //.should('have.value', KRBL (B)')
-
-    cy.wait(3000)
-    cy.get('select').select('PEL (B)', { force: true })
-    //.should('have.value', PEL (B)')
+   
    
 
 

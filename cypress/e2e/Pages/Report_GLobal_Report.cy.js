@@ -18,15 +18,15 @@ cy.wait(3000);
 cy.get('.form_wrap').click();
 cy.wait(2000);
 
-//Enter Pin
-cy.wait(1000);
-cy.get('[formcontrolname="otp1"]').type('0');
-cy.get('[formcontrolname="otp2"]').type('0');
-cy.get('[formcontrolname="otp3"]').type('0');
-cy.get('[formcontrolname="otp4"]').type('0');
-cy.wait(3000);
+   //Enter Pin
+   cy.wait(1000);
+   cy.get('[formcontrolname="otp1"]').type('0');
+   cy.get('[formcontrolname="otp2"]').type('0');
+   cy.get('[formcontrolname="otp3"]').type('0');
+   cy.get('[formcontrolname="otp4"]').type('0');
+   cy.wait(3000);
 
-cy.get('.continue_button_wrap > p').click();
+//cy.get('.continue_button_wrap > p').click();
 cy.wait(3000);
 
 //Click on form

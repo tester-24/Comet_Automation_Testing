@@ -191,8 +191,8 @@ it('Comet_Jainam', () => {
     cy.get(':nth-child(2) > :nth-child(3) > .btn').click()
     cy.wait(1000)
 
-    cy.get('.k-grid-content').click()
-    cy.wait(2000)
+    //cy.get('.k-grid-content').click()
+    //cy.wait(2000)
 
     //cy.wait(4000)
 

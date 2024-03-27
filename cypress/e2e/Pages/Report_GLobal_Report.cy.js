@@ -67,15 +67,15 @@ cy.wait(3000);
 
     //Download 
     cy.get('.col-lg-2 > .btn').click()
-    cy.wait(4500)
+    cy.wait(8000)
 
 
 
 
     //Selecting DERIVATIVE 
     cy.get('.container > form.ng-valid > :nth-child(2) > :nth-child(1)')
-        .type("{downArrow}{Enter}")
-    cy.wait(3500)
+    .type("{downArrow}{downArrow}{Enter}")
+    cy.wait(4000)
 
     //Download By
     cy.get(':nth-child(2) > .form-group').click()

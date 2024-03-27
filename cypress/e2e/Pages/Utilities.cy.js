@@ -73,6 +73,16 @@ it('Comet_Jainam', () => {
         //.select('HGS (B)')
     //.should('have.value', 'HGS (B)')
 
+
+    cy.wait(3000)
+    cy.get('select').select('DWARKESH (B)', { force: true })
+    //.should('have.value', 'DWARKESH (B)')
+
+    cy.wait(3000)
+    cy.get('select').select('BAJAJ-AUTO (B)', { force: true })
+    //.should('have.value', 'BAJAJ-AUTO (B)')
+
+
     cy.wait(3000)
     cy.get('select').select('KSCL (B)', { force: true })
     //.should('have.value', 'KSCL (B)')
@@ -137,26 +147,15 @@ it('Comet_Jainam', () => {
     cy.get('select').select('SINCLAIR (B)', { force: true })
     //.should('have.value', SINCLAIR (B)')
 
-    cy.wait(3000)
-    cy.get('select').select('BSE (B)', { force: true })
+    //cy.wait(3000)
+    //cy.get('select').select('BSE (B)', { force: true })
     //.should('have.value', BSE (B)')
 
     cy.wait(3000)
     cy.get('select').select('SIYSIL (B)', { force: true })
     //.should('have.value', SIYSIL (B)')
 
-    cy.wait(3000)
-    cy.get('select').select('LT (B)', { force: true })
-    //.should('have.value', LT (B)')
-
-    cy.wait(3000)
-    cy.get('select').select('SHREYAS (D)', { force: true })
-    //.should('have.value', SHREYAS (D)')
-
-    
-    //cy.get('select').select('UNICHEMLAB (T)', { force: true })
-    //.should('have.value', UNICHEMLAB (T)')
-
+   
    
    
 
